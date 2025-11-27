@@ -14,19 +14,19 @@
     <header>
         <ul class="nav bg-primary">
             <li class="nav-item">
-                <a href="#" class="nav-link active">Home</a>
+                <a href="#carouselExampleSlidesOnly" class="nav-link active">Home</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link active">Skills</a>
+                <a href="#skills-bar" class="nav-link active">Skills</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link active">Project</a>
+                <a href="#projects" class="nav-link active">Project</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link active">About Us</a>
+                <a href="#about-us" class="nav-link active">About Us</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link active">Contact Us</a>
+                <a href="#contact-us" class="nav-link active">Contact Us</a>
             </li>
         </ul>
     </header>
@@ -80,7 +80,7 @@
 
     <hr>
     <!--Skills-->
-    <div class="skills-bar">
+    <div class="skills-bar" id="skills-bar">
         <h1 class="main-topics">Skills</h1>
 
         <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
@@ -102,7 +102,7 @@
     <hr>
     <!--Projects-->
     <h1 class="main-topics" style="margin-left: 5%;">Projects</h1>
-    <div class="projects">
+    <div class="projects" id="projects">
         <div class="project-items">
             <h2>Email Scraping Project</h2>
             <p>
@@ -140,7 +140,7 @@
 
     <!--About Us-->
     <h1 class="main-topics" style="margin-left: 5%;">About Us</h1>
-    <div class="about-us">
+    <div class="about-us" id="about-us">
         <div class="about-us-content">
             <img src="./images/myimage.png" alt="">
         </div>
@@ -163,7 +163,7 @@
     </div>
     <hr>
     <!--Contact Us-->
-    <div class="contact-us">
+    <div class="contact-us" id="contact-us">
         <div class="contact-box">
             <div class="contact-item">
                 <h2 class="main-topics">Contact Us</h2>
@@ -181,7 +181,7 @@
                 <textarea name="commenterComment" id="commenterComment" rows="5"></textarea>
             </div>
             <div class="contact-item" style="display: flex;justify-content: center;align-items: center;">
-                <button type="button">Submit</button>
+                <button type="button" onclick="submitData()">Submit</button>
             </div>
         </div>
     </div>
@@ -198,4 +198,5 @@
         </div>
     </footer>
 </body>
+
 </html>
